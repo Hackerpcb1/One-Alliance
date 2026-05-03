@@ -1,0 +1,37 @@
+﻿/* Extracted from index.html: Dynamic AJAX Live News inline settings */
+#daln-container{ 
+    min-height: 40px; 
+    /* Posición fija en la parte inferior */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    /* Transición suave para el pliegue */
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(0);
+}
+#daln-featured-container{ display: none; }
+
+/* Botón de abrir (flecha hacia arriba) */
+#daln-open {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 30px;
+    background: #0033a0;
+    color: white;
+    border: none;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+    z-index: 9998;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+}
+#daln-open:hover {
+    background: #0044cc;
+}
